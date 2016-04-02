@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- Image Gallery  -->
+<div class='gallery' ng-show="product.images.length"><!--定义一个集合长度判断条件，如果长度小于等于0则不执行div中的代码-->
+    <!--<img ng-src="{{product.images[0]}}" />加载一个angularjs的图片-->
+    <ul class="list-inline thumbs">
+        <li class="thumbnail" ng-repeat="image in product.images">
+            <img ng-src="{{image}}" />
+        </li>
+    </ul>
+</div>
+</body>
+</html>

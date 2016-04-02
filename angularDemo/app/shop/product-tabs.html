@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<section>
+    <ul class="nav nav-pills">
+        <li ng-class="{ active: tab.isSet(1) }"><!--定义一个angular的样式表-->
+            <a href ng-click="tab.setTab(1)">Description</a></li><!--angularjs的点击事件-->
+        <li ng-class="{ active: tab.isSet(2) }">
+            <a href ng-click="tab.setTab(2)">Specs</a></li>
+        <li ng-class="{ active: tab.isSet(3) }">
+            <a href ng-click="tab.setTab(3)">Reviews</a></li>
+    </ul>
+
+    <product-description ng-show="tab.isSet(1)"></product-description><!--E类型的directive定义-->
+    <div product-specs ng-show="tab.isSet(2)"></div><!--A类型的directive定义-->
+    <div ng-show="tab.isSet(3)">
+        <h4>Reviews</h4>
+        <div ng-repeat="r in product.reviews">
+            <strong>{{r.stars}} Stars</strong>
+            {{r.body}}
+            <cite class="clearfix">—{{r.author}} on {{ r.createdOn  | date }}</cite>
+            </br>
+        </div>
+    </div>
+</section>
+</body>
+</html>

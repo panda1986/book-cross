@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="gemStore"><!--加载模块gemStore-->
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <script type="text/javascript" src="../angular.min.js"></script><!--引入angularjs-->
+    <script type="text/javascript" src="shop.js"></script>
+    <script type="text/javascript" src="include.js"></script>
+</head>
+<body class="list-group" ng-controller="StoreController as store"> <!--引用一个控制器-->
+<header>
+    <h1 class="text-center">angularjs测试DEMO</h1>
+    <h2 class="text-center">– 一个商店 –</h2>
+</header>
+<div class="list-group-item" ng-repeat="product in store.products"><!--定义一个集合的迭代器-->
+    <h3>
+        {{product.name}}
+        <em class="pull-right">{{product.price | currency}}</em>
+    </h3>
+    <product-gallery></product-gallery><!--自定义标签，在app1.js中对应productGallery directive-->
+    <product-tabs></product-tabs>
+    <!--  Review Form -->
+    <form name="reviewForm" ng-controller="ReviewController as reviewCtrl" ng-submit="reviewCtrl.addReview(product)">
+        <!--  Live Preview -->
+        <blockquote>
+            <strong>{{reviewCtrl.review.stars}} Stars</strong>
+            {{reviewCtrl.review.body}}
+            <cite class="clearfix">—{{reviewCtrl.review.author}} on {{ reviewCtrl.review.createdOn  | date }}</cite>
+        </blockquote>
+        <!--  Review Form -->
+        <h4>Submit a Review</h4>
+        <fieldset class="form-group">
+            <select ng-model="reviewCtrl.review.stars" class="form-control" ng-options="stars for stars in [5,4,3,2,1]" title="Stars">
+                <option value="">Rate the Product</option>
+            </select>
+        </fieldset>
+        <fieldset class="form-group">
+            <textarea ng-model="reviewCtrl.review.body" class="form-control" placeholder="Write a short review of the product..." title="Review"></textarea>
+        </fieldset>
+        <fieldset class="form-group">
+            <input ng-model="reviewCtrl.review.author" type="email" class="form-control" placeholder="jimmyDean@example.org" title="Email" />
+        </fieldset>
+        <fieldset class="form-group">
+            <input type="submit" class="btn btn-primary pull-right" value="Submit Review" />
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>

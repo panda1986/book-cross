@@ -1,0 +1,327 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>西辛小学</title>
+    <link rel="stylesheet" type="text/css" href="/r/cms/www/xixinxiaoxue/css/index-style.css">
+    <link rel="stylesheet" type="text/css" href="/r/cms/www/xixinxiaoxue/css/huiyi8.css">
+    <script type="text/javascript" src=" /r/cms/www/xixinxiaoxue/js/jquery-1.4.2.js"></script>
+    <script type="text/javascript" src=" /r/cms/www/xixinxiaoxue/js/slide.js"></script>
+    <script type="text/javascript" src=" /r/cms/www/xixinxiaoxue/js/kecheng.js"></script>
+    <link rel="stylesheet" type="text/css" href="/r/cms/www/xixinxiaoxue/css/nei_liebiao.css">
+    <link rel="stylesheet" type="text/css" href="/r/cms/www/xixinxiaoxue/css/xiaoli.css">
+    <link rel="stylesheet" type="text/css" href="/r/cms/www/xixinxiaoxue/css/xinwen.css">
+</head>
+
+<body>
+<div>
+    <div class="bg_top">
+        <div  class="top">
+            <div class="denglukuang">
+                <div class="nav" >
+                    <p class="nav_ss" style="font-size:14px;"><a href="${base}/">首页 </a><span>|</span><a href="#">加入收藏</a> </p>
+                </div>
+                <div class="soso">
+                    <input type="text" class="txt" />
+                    <input type="button" class="but"/>
+                </div>
+            </div>
+        </div>
+        <div class="nav_daohang">
+            <div id="menu">
+                <ul id="nav">
+                    <li class="jquery_out"><a href="http://123.56.113.202:18096/"></a>
+                        <div class="jquery_inner">
+                            <div class="jquery"> <span class="text"><strong><a href="${base}/">首页</a></strong></span><span class="smile"></span> </div>
+                        </div>
+                    </li>
+                    [@cms_channel_list]
+                    [#list tag_list as channel]
+                    <li class="mainlevel nav_main"><a href="${channel.url}">${channel.name}</a>
+                        <ul >
+                            [@cms_channel_list parentId=channel.id]
+                            [#list tag_list as sub]
+                            <li><a href="${sub.url}" target="_self">${sub.name}</a></li>
+                            [/#list]
+                            [/@cms_channel_list]
+                        </ul>
+                    </li>
+                    [/#list]
+                    [/@cms_channel_list]
+                    <div class="clear"></div>
+                </ul>
+            </div>
+        </div>
+        <div class="caidai"></div>
+    </div>
+    <div class="conter_fangxing">
+        <div class="conter_tupian">
+            <div class="tupian">
+                <div class="laoshi"><a href="#"><img src="/r/cms/www/xixinxiaoxue/img/liaojiegengduo-.png"></a></div>
+                <div class="xiaochang"><a href="http://123.56.113.202:18096/jsfc/index.jhtml"><img src="/r/cms/www/xixinxiaoxue/img/laosshi-a.png"></a></div>
+            </div>
+            <div class="tupian_img">
+                <div class="xiaochang_a"><a href="#"><img src="/r/cms/www/xixinxiaoxue/img/Deeds.png"></a></div>
+                <div class="laoshi_a"><a href="http://123.56.113.202:18096/jsfc/index.jhtml"><img src="/r/cms/www/xixinxiaoxue/img/shi.png"></a></div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="xin_box">
+                <div class="jiaodian">
+                    <div class="jiaodian_left"><a><img src="/r/cms/www/xixinxiaoxue/img/xinwen_left.png">
+                        <div class="jiaodian_xa">
+                            <p>课堂剪影</p>
+                        </div>
+                    </a></div>
+                    <div class="jiaodian_xia">
+                        <div class="jiaodian_daohang">
+                            <div class="jiaodian_daohangleft">
+                                <p>动态</p>
+                            </div>
+                            <div class="jiaodian_daohangright">
+                                <p>MORE</p>
+                            </div>
+                            <div class=" jiaodian_txt" style=" font-size:12px; line-height:36px; ">
+                                <p>2015年11月教师进修信息</p>
+                                <p>2015年11月教师进修信息</p>
+                                <p>2015年11月教师进修信息</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div></div>
+                </div>
+                <div class="new_right">
+                    <div class="new_right_you">
+                        <div class="new_yingyong">
+                            <div class="new_yingyongleft">
+                                <p>周例</p>
+                            </div>
+                            <div class="pinglun">
+                                <div style="width: 300px; height: 470px; margin-top: 10px; margin-left: 12px;">
+                                    <div class="xinxi">
+                                        <div class="zhouli">
+                                            <table class="biaoge" align="center" border="0" cellspacing="0px">
+                                                <caption style="font-size:20px; margin-bottom:10px; padding-bottom:10px; border-bottom:2px solid #000; font-family:微软雅黑;">
+                                                    学校周例&nbsp;&nbsp;2016-03-14 星期一
+                                                </caption>
+                                                <tbody>
+                                                <tr>
+                                                    <th align="center" width="60%">内容</th>
+                                                    <th align="center" width="25%">时间</th>
+                                                    <th align="center">负责人</th>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="/weekCalendar.do">区考研中心视导</a></td>
+                                                    <td>周一</td>
+                                                    <td>徐立新</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="/weekCalendar.do">高一高二年级开始出早操</a></td>
+                                                    <td>周一</td>
+                                                    <td>马天翔</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="/weekCalendar.do">升旗班：高二18班 班主任：巴佟 国旗下讲话：刘伟彦 题目：《人生修炼的高度--自觉》</a></td>
+                                                    <td>周一09:00</td>
+                                                    <td>曾爽</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="/weekCalendar.do">全校班主任会</a></td>
+                                                    <td>周一15:40</td>
+                                                    <td>马天翔</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="/weekCalendar.do">高一年级全体学生大会</a></td>
+                                                    <td>周一15:40</td>
+                                                    <td>孙道平</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="/weekCalendar.do">区考研中心视导</a></td>
+                                                    <td>周二</td>
+                                                    <td>徐立新</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="/weekCalendar.do">骨干教师示范课安排（数学）</a></td>
+                                                    <td>周二08:30~09:10</td>
+                                                    <td>高锡花</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="/weekCalendar.do">骨干教师示范课安排（数学）</a></td>
+                                                    <td>周二09:50~10:30</td>
+                                                    <td>胡亚萍</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="/weekCalendar.do">骨干教师示范课安排（数学）</a></td>
+                                                    <td>周二10:40~11:20</td>
+                                                    <td>许成文</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="/weekCalendar.do">高二年级班长会：关于组建年级自治委员会的商讨</a></td>
+                                                    <td>周二19:00~19:40</td>
+                                                    <td>刘伟彦</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="/weekCalendar.do">顺义区艺术节领队会</a></td>
+                                                    <td>周三08:20</td>
+                                                    <td>马天翔</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="/weekCalendar.do">“智慧课堂”课题组工作会</a></td>
+                                                    <td>周三15:40</td>
+                                                    <td>李冬梅</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="/weekCalendar.do">高二“文心讲堂”</a></td>
+                                                    <td>周三16:30~17:10</td>
+                                                    <td>刘伟彦</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="/weekCalendar.do">高三顺义区模拟统练</a></td>
+                                                    <td>周四</td>
+                                                    <td>曾昕</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="/weekCalendar.do">骨干教师示范课安排（物理）</a></td>
+                                                    <td>周四08:30~09:10</td>
+                                                    <td>初胜</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="/weekCalendar.do">高二教研组长会</a></td>
+                                                    <td>周四09:10~09:40</td>
+                                                    <td>刘伟彦</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="/weekCalendar.do">校务会</a></td>
+                                                    <td>周四18:00</td>
+                                                    <td>田向工</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="/weekCalendar.do">顺义区艺术节活动</a></td>
+                                                    <td>周五全天</td>
+                                                    <td>马天翔</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="/weekCalendar.do">骨干教师示范课安排（化学）</a></td>
+                                                    <td>周五07:40~08:20</td>
+                                                    <td>穆卫国</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="/weekCalendar.do">骨干教师示范课安排（化学）</a></td>
+                                                    <td>周五08:30~09:10</td>
+                                                    <td>潘德梅</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="/weekCalendar.do">骨干教师示范课安排（政治）</a></td>
+                                                    <td>周五08:30~09:10</td>
+                                                    <td>曹景帅</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="/weekCalendar.do">骨干教师示范课安排（政治）</a></td>
+                                                    <td>周五09:50~10:30</td>
+                                                    <td>蒋学利</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="/weekCalendar.do">骨干教师示范课安排（物理）</a></td>
+                                                    <td>周五13:10~13:50</td>
+                                                    <td>王占忠</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="/weekCalendar.do">高二7:30上课，课间操取消连上六节，下午13:10上课，两节课后放假</a></td>
+                                                    <td>周五14:40</td>
+                                                    <td>刘伟彦</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="/weekCalendar.do">高一上午正常上课，下午13:10上课，三节课后放假</a></td>
+                                                    <td>周五15:40</td>
+                                                    <td>孙道平</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="/weekCalendar.do">高三顺义区模拟统练，下午16:00放学</a></td>
+                                                    <td>周五16:00</td>
+                                                    <td>曾昕</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="/weekCalendar.do">顺义区艺术节活动</a></td>
+                                                    <td>周六全天</td>
+                                                    <td>马天翔</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="/weekCalendar.do">顺义区艺术节活动</a></td>
+                                                    <td>周日全天</td>
+                                                    <td>马天翔</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="/weekCalendar.do">实验学校小学部学生来校游泳</a></td>
+                                                    <td>周日下午</td>
+                                                    <td>郝利鹏</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="/weekCalendar.do">学生晚自习前返校</a></td>
+                                                    <td>周日17:20</td>
+                                                    <td>年级主任</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="new_right_xiaososoright"> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="new">
+                    <div class="new_kuang">
+                        <div class="new_xinwen">
+                            <p>新闻</p>
+                        </div>
+                        <div class="new_wenzi">
+                            <p>MORE</p>
+                        </div>
+                    </div>
+                    <div class="new_wenben">
+                        <div class="wenben_right">
+                            <p>2015-11-24</p>
+                            <p>2015-11-24</p>
+                            <p>2015-11-24</p>
+                            <p>2015-11-24</p>
+                            <p>2015-11-24</p>
+                            <p>2015-11-24</p>
+                            <p>2015-11-24</p>
+                            <p>2015-11-24</p>
+                            <p>2015-11-24</p>
+                            <p>2015-11-24</p>
+                            <p>2015-11-24</p>
+                        </div>
+                        <div class="wenben_left">
+                            <p>西辛小学全体同学参加“生涯规划心智教育”培训</p>
+                            <p>西辛小学全体同学参加“生涯规划心智教育”培训</p>
+                            <p>西辛小学全体同学参加“生涯规划心智教育”培训</p>
+                            <p>西辛小学全体同学参加“生涯规划心智教育”培训</p>
+                            <p>西辛小学全体同学参加“生涯规划心智教育”培训</p>
+                            <p>西辛小学全体同学参加“生涯规划心智教育”培训</p>
+                            <p>西辛小学全体同学参加“生涯规划心智教育”培训</p>
+                            <p>西辛小学全体同学参加“生涯规划心智教育”培训</p>
+                            <p>西辛小学全体同学参加“生涯规划心智教育”培训</p>
+                            <p>西辛小学全体同学参加“生涯规划心智教育”培训</p>
+                            <p>西辛小学全体同学参加“生涯规划心智教育”培训</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+</div>
+<div  style="width:100%; height:60px; background-color:#6C6C6C;" > <div  style="width:100%; height:80px; background-color:#6C6C6C;" ><div class="foot_txt"><p>西辛教育:<a href="#"> 中国现代教育网</a><span>|</span><a href="#">提供技术支持</a><span>|</span><a href="#">违法和不良信息举报中</a>
+</p><br><span >   Copyright 2006-2015 happy31.30edu.com , All Rights Reserved</span></div></div></div></div></div> </div>
+</div></div>
+</div>
+
+
+</div>
+</body>
+</html>
