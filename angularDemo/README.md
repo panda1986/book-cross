@@ -1,1 +1,4 @@
-asdfasd
+图书漂流demo
+包括app,web端
+其中web端框架由panda编写
+主要核心及贡献者为htc
